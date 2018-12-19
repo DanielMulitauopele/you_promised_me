@@ -9,7 +9,7 @@ describe 'user sees index page' do
   it 'should list out all promises' do
     visit '/'
 
-    expect(page). have_content('All Promises')
+    expect(page).to have_content('All Promises')
     expect(page).to have_content(@promise1.text)
     expect(page).to have_content(@promise2.text)
   end
