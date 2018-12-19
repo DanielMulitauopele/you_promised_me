@@ -6,7 +6,7 @@ describe 'user sees show page' do
   end
 
   it "should list a single promise" do
-    visit promise_path
+    visit promise_path(@promise.id)
 
     expect(page).to have_content("Promise ##{@promise.id}")
     expect(page).to have_content(@promise.text)
