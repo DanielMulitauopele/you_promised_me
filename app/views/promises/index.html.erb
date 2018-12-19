@@ -1,5 +1,7 @@
 <h1>All Promises</h1>
 
 <% @promises.each do |promise| %>
-  <p><%= promise.text %></p> 
+  <p><%= promise.text %></p>
 <% end %>
+
+<%= link_to 'Track new promise!', new_promise_path %>

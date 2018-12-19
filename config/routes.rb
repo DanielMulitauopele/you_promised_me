@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/' => 'promises#index'
+  root 'promises#index'
 
-  resources :promises, only: [:show]
+  resources :promises, only: [:show, :new]
 end
