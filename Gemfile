@@ -43,6 +43,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'simplecov'
   gem 'shoulda-matchers'
+  gem 'pry'
 end
 
 group :development do
