@@ -3,3 +3,4 @@
 <p><%= @promise.text %></p>
 
 <%= link_to "Edit Promise", edit_promise_path(@promise) %>
+<%= link_to "Delete Promise", promise_path(@promise), method: :delete %>

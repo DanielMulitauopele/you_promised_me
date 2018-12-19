@@ -26,6 +26,12 @@ class PromisesController < ApplicationController
     redirect_to promise_path(@promise)
   end
 
+  def destroy
+    promise = Promise.find(params[:id])
+    promise.destroy
+    redirect_to root_path
+  end
+
   private
 
   def promise_params

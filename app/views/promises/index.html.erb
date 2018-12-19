@@ -1,6 +1,7 @@
 <h1>All Promises</h1>
 
 <% @promises.each do |promise| %>
+  <h3>Promise #<%= promise.id %></h3>
   <p><%= promise.text %></p>
 <% end %>
 
