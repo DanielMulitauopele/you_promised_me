@@ -16,6 +16,10 @@ class PromisesController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @promise = Promise.find(params[:id])
+  end
+
   private
 
   def promise_params

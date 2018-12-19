@@ -1,0 +1,8 @@
+<h1>Edit Promise #<%= @promise.id %></h1>
+
+<%= form_for @promise do |f| %>
+  <%= f.label :edit_promise %>
+  <%= f.text_field :text %>
+
+  <%= f.submit "Submit" %>
+<% end %>
