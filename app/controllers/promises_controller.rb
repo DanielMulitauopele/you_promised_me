@@ -20,6 +20,12 @@ class PromisesController < ApplicationController
     @promise = Promise.find(params[:id])
   end
 
+  def update
+    @promise = Promise.find(params[:id])
+    @promise.update(promise_params)
+    redirect_to promise_path(@promise)
+  end
+
   private
 
   def promise_params

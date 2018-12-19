@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root 'promises#index'
 
-  resources :promises, only: [:show, :new, :create, :edit]
+  resources :promises, only: [:show, :new, :create, :edit, :update]
 end
