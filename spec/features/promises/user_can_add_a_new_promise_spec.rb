@@ -11,7 +11,7 @@ describe 'user can add a new promise' do
   it 'should allow user to send post action' do
     visit new_promise_path
 
-    fill_in 'Input', with: "New Promise Information!"
+    fill_in 'promise[text]', with: "New Promise Information!"
 
     click_on 'Submit'
 

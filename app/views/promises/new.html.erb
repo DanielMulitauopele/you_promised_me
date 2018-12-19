@@ -1,0 +1,6 @@
+<%= form_for @promise, url: {action: "create"} do |f| %>
+  <%= f.label :promise_text %>
+  <%= f.text_field :text %>
+
+  <%= f.submit 'Submit' %>
+<% end %>
